@@ -1,0 +1,79 @@
+*
+    margin: 0
+    padding: 0
+
+body
+    font-size: 15px
+    background-color: hsl(0, 0%, 95%)
+
+main
+    display: flex
+    flex-direction: column
+    margin: 10vh 5vh 0
+
+    section
+        height: 65vh
+        color: hsl(0, 0%, 95%)
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: space-around
+        padding: 30px 40px
+        h1
+            text-transform: uppercase
+            font-family: 'Big Shoulders Display', cursive
+            font-size: 3rem
+
+        p
+            color: hsla(0, 0%, 100%, 0.75)d
+            font-family: 'Lexend Deca', sans-serif
+            line-height: 200%
+            max-width: 400px
+
+        button
+            font-family: 'Lexend Deca', sans-serif
+            background-color: hsl(0, 0%, 95%)
+            padding: 10px 20px
+            border-radius: 20px
+            border: none
+            border: 2px solid hsl(0, 0%, 95%)
+        button:hover
+            cursor: pointer
+
+    .sedan
+        background-color: hsl(31, 77%, 52%)
+        button
+            color: hsl(31, 77%, 52%)
+        button:hover
+            background-color: hsl(31, 77%, 52%)
+            color: hsl(0, 0%, 95%)
+    .suv
+        background-color: hsl(184, 100%, 22%)
+        button
+            color: hsl(184, 100%, 22%)
+        button:hover
+            background-color: hsl(184, 100%, 22%)
+            color: hsl(0, 0%, 95%)
+    .luxury
+        background-color: hsl(179, 100%, 13%)
+        button
+            color: hsl(179, 100%, 13%)
+        button:hover
+            background-color: hsl(179, 100%, 13%)
+            color: hsl(0, 0%, 95%)
+
+@media (min-width: 550px)
+
+    main
+        section
+            align-items: center
+
+@media (min-width: 1024px)
+    main
+        margin: 0
+        position: absolute
+        flex-direction: row
+        transform: translateY(-50%)
+        top: 50%
+        margin-left: 10vh
+        margin-right: 10vh
